@@ -1,7 +1,10 @@
 import '../styles/main.scss';
+import { bears, bearBuilder } from './helpers/river';
+import handleButtonClick from './components/bearForm';
 
 const init = () => {
-  console.log('YOU ARE UP AND RUNNING!');
+  bearBuilder(bears);
+  handleButtonClick();
 };
 
 init();
