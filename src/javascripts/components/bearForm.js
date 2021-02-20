@@ -9,11 +9,15 @@ const getBearInfo = (e) => {
   const details = `${name} ${text}`;
   const bearId = bears.map((bear) => bear.id).sort((a, b) => a - b);
   const id = bearId.length ? bearId[bearId.length - 1] + 1 : 1;
+  const tried = Math.floor(Math.random() * 100);
+  const caught = Math.floor(Math.random() * 50);
   const obj = {
     name,
     imgUrl,
     details,
     id,
+    tried,
+    caught,
   };
   bears.push(obj);
   bearBuilder(bears);

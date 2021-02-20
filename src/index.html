@@ -20,7 +20,7 @@
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Fattest Best Award</a>
+          <a class="nav-link" data-model-target="#modal" href="">Fattest Best Award</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,6 +40,7 @@
       </form>
     </div>
   </nav>
+
   <div class="container mt-5">
     <div class="row">
       <div class="col-sm text-white">
@@ -58,7 +59,11 @@
         <button type="submit" class="btn btn-primary" id="submitBear">Submit</button>
       </form>
     </div>
-  
+    <div class="row mt-5" id="scoreCards">
+      <div class="col border-primary text-white">Bear Score Cards
+        <div class="col-sm d-flex justify-content-around flex-wrap" id="showScore"></div>
+      </div>
+    </div>
 
     <div class="row mt-5" id="bearCards">
       <div class="col border border-primary text-white">All the bears you are stalking today
@@ -69,8 +74,7 @@
   <div id="app"></div>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
