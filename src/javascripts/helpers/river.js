@@ -49,5 +49,13 @@ const bearBuilder = (taco) => {
   });
   printToDom('#bearContainer', domString);
 };
+const getFattest = () => {
+  const fattest = bears.reduce((a, b) => (a.caught > b.caught ? a : b), {});
+  document.querySelector('.modal-body').innerHTML = `<div class="card text-warning bg-dark d-flex justify-content-center text-cetner" style="width: 100%;">
+                                                      <h1 class="text-center">${fattest.name} won the Gold Medal</h1>
+                                                      <img src="${fattest.imgUrl}" class="card-img-top" alt="${fattest.name}"
+                                                      <h2>${fattest.name} ate ${fattest.caught} fish in Autumn.</h2>
+                                                    </div>`;
+};
 
-export { bears, bearBuilder };
+export { bears, bearBuilder, getFattest };
