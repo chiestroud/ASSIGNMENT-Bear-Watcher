@@ -49,6 +49,7 @@ const bearBuilder = (taco) => {
   });
   printToDom('#bearContainer', domString);
 };
+
 const getFattest = () => {
   const fattest = bears.reduce((a, b) => (a.caught > b.caught ? a : b), {});
   document.querySelector('.modal-body').innerHTML = `<div class="card text-warning bg-dark d-flex justify-content-center text-cetner" style="width: 100%;">
